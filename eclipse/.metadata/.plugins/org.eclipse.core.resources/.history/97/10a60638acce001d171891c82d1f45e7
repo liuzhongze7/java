@@ -1,0 +1,104 @@
+package lanqiao;
+
+public class test_b {
+    public static void main(String[] args) {
+        int ans = 0;
+        for (int n = 1; n <= 10; ++n) { // 枚举左半边数字的位数
+            for (int d = 1; d <= 9; ++d) { // 枚举左半边数字最高位的数字
+                for (int x = 0; x <= 9; ++x) { // 枚举左半边数字的第二个数字
+                    int[] cnt = new int[10]; // 数字 y 在右半边的出现次数
+                    boolean isValid = true; // 是否有合法的回文山形数
+                    // 计算右半边数字
+                    int m = n;
+                    int y = d;
+                    if (n > 1) {
+                        if (x >= d) { // 左半边数字单调不减
+                            int z = 2 * d - x; // 右半边数字单调不增
+                            if (z <= 9) {
+                                y = z;
+                                --m;
+                            } else {
+                                isValid = false;
+                            }
+                        } else { // 左半边数字既单调不减也单调不增
+                            for (int i = 2; i < n; ++i) {
+                                if (cnt[x] >= 9) { 
+                                    isValid = false; 
+                                    break; 
+                                }
+                                cnt[x]++;
+                                if (cnt[x] > cnt[y]) {
+                                    if (y < 0 || y > 9) {
+                                        isValid = false;
+                                        break;
+                                    }
+                                    ++y;
+                                    if (y == x) {
+                                        ++y;
+                                    }
+                                    if (y > 9) {
+                                        isValid = false;
+                                        break;
+                                    }
+                                }
+                                x = x + 1;
+                                if (x >= d) { 
+                                    x = d;
+                                }
+                            }
+                            if (cnt[x] >= 9 || cnt[d] >= 9) { // 判断剩余数字
+                                isValid = false;
+                            } else {
+                                cnt[x]++;
+                                cnt[d]++;
+                                if (cnt[x] > cnt[y]) {
+                                    if (y < 0 || y > 9) {
+                                        isValid = false;
+                                    } else {
+                                        ++y;
+                                        if (y > 9) {
+                                            isValid = false;
+                                        }
+                                    }
+                                }
+                                if (cnt[d] > cnt[y]) {
+                                    if (y < 0 || y > 9) {
+                                        isValid = false;
+                                    } else {
+                                        ++y;
+                                        if (y == d) {
+                                            ++y;
+                                        }
+                                        if (y > 9) {
+                                            isValid = false;
+                                        }
+                                    }
+                                }
+                                if (!isValid) { // 补充不满足条件的计数
+                                    if (cnt[d] >= 9) {
+                                        ++ans;
+                                    } else if (d == y) {
+                                        ans += cnt[d] + 1;
+                                    } else {
+                                        ans += cnt[d];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (isValid) { // 计算回文山形数个数
+                        int c = cnt[y];
+                        for (int i = 0, len = 2 * m + 1; i < len; ++i) {
+                            if (i != m && i != m - 1) {
+                                c *= 9;
+                            }
+                        }
+                        ans += c;
+                    }
+                }
+            }
+        }
+        System.out.println(ans);
+    }
+}
+

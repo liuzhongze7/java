@@ -1,0 +1,24 @@
+package lanqiao;
+
+import java.util.Scanner;
+
+public class test_b {
+    public static void main(String[] args) {
+    	Scanner sc = new Scanner(System.in);
+    	int n = sc.nextInt();
+    	String str = n + "";
+    	int left = 0;
+    	int rigth = str.length() - 1;
+    	boolean flag = true ;
+    	
+    	while(left < rigth) {
+    		if (str.charAt(left) != str.charAt(rigth)){
+    			flag = false;
+    			break;
+    		}
+    		left ++;
+    		rigth --;
+    	}
+    	System.out.print(flag);
+    }
+}

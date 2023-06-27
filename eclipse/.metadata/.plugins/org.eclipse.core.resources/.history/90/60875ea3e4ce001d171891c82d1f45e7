@@ -1,0 +1,26 @@
+package lanqiao_test;
+
+import java.util.Scanner;
+
+public class eg1 {
+	public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        int[] arr = new int[26];
+		for(int i = 0;i < s.length();i++) {
+			arr[s.charAt(i) - 'a']++;
+		}
+		int max = Integer.MAX_VALUE;
+		for(int i = 0;i < 26;i++) {
+			max = Math.max(max, arr[i]);
+		}
+		for (int i = 0; i < 26; i++) {
+	           if(arr[i] == max) {
+	        	   System.out.println((char) (i+'A'));
+	           	   System.out.println(max);
+	           }
+		}
+        //在此输入您的代码...
+        scan.close();
+    }
+}

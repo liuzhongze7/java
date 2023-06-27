@@ -1,0 +1,14 @@
+package test_10_18;
+
+public class Test_10_18 {
+
+	public Test_10_18() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

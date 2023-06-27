@@ -1,0 +1,47 @@
+package lanqiao;
+
+public class dome {
+
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+
+        int count = 0;
+
+        //处理第一部分区间
+        for (int i = 2; i <= 222; i++) {
+            String s1 = Integer.toString(i);
+            String s2 = new StringBuilder(s1).reverse().toString();
+            String s = s1 + s2;
+            int num = Integer.parseInt(s);
+            if (num >= 2022 && num <= 222222222 && check(num)) {
+                count++;
+            }
+        }
+
+        //处理第二部分区间
+        for (int i = 2; i <= 222; i++) {
+            String s1 = Integer.toString(i);
+            String s2 = new StringBuilder(s1.substring(0, s1.length() - 1)).reverse().toString();
+            String s = s1 + s2;
+            long num = Long.parseLong(s);
+            if (num >= 2222222222L && num <= 2022222022L && check((int)num)) {
+                count++;
+            }
+        }
+
+        long end = System.currentTimeMillis();
+
+        System.out.println(count);
+        System.out.println("共用时" + (end - start) / 1000.0 + "秒");
+    }
+
+    private static boolean check(int num) {
+        String s = Integer.toString(num);
+        for (int i = 0; i < s.length() - 1; i++) {
+            if (s.charAt(i) > s.charAt(i + 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

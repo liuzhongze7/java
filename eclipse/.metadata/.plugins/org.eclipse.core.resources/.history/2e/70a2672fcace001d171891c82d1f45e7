@@ -1,0 +1,46 @@
+package lanqiao;
+
+public class dome {
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        int count = 0;
+        count += countPalindromicNumbers(4);
+        count += countPalindromicNumbers(9);
+        long end = System.currentTimeMillis();
+        System.out.println(count);
+        System.out.println("π≤”√ ±" + (end - start) / 1000 % 60 + "√Î");
+    }
+
+    private static int countPalindromicNumbers(int digits) {
+        int count = 0;
+        if (digits % 2 == 0) {
+            int half = digits / 2;
+            for (int i = (int)Math.pow(10, half - 1); i < (int)Math.pow(10, half); i++) {
+                int palindrome = Integer.parseInt(i + new StringBuilder().append(i).reverse().toString());
+                if (palindrome >= 2022 && palindrome <= 2022222022 && check(palindrome)) {
+                    count++;
+                }
+            }
+        } else {
+            int half = digits / 2;
+            for (int i = (int)Math.pow(10, half - 1); i < (int)Math.pow(10, half); i++) {
+                for (int j = 0; j <= 9; j++) {
+                    int palindrome = Integer.parseInt(i + j + new StringBuilder().append(i).reverse().toString());
+                    if (palindrome >= 2022 && palindrome <= 2022222022 && check(palindrome)) {
+                        count++;
+                    }
+                }
+            }
+        }
+        return count;
+    }
+
+    private static boolean check(int num) {
+        String s = num + "";
+        for (int i = 0; i < s.length() - 1; i++) {
+            if (s.charAt(i) > s.charAt(i + 1)) return false;
+        }
+        return true;
+    }
+}
+

@@ -1,0 +1,41 @@
+package lanqiao;
+
+public class dome {
+
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        int count = 0;
+
+        for (int i = 2; i <= 9; i++) { // 第一位数字限制，最低位只能为2
+            for (int j = 0; j <= 9; j++) {
+                if (i == 2 && j == 0) { // 第二位数字限制，最低位只能为2，不能为0
+                    continue;
+                }
+                for (int k = 0; k <= 9; k++) {
+                    int num = i * 1000000 + j * 100100 + k * 1010 + j * 100 + i; // 构造回文数字
+                    if (num > 2022222022) { // 如果数字已经超出范围，跳出循环
+                        break; 
+                    }
+                    if (num >= 2022 && check(num)) { // 判断数字是否满足要求
+                        count++;
+                    }
+                }
+            }
+        }
+
+        long end = System.currentTimeMillis();
+        System.out.println(count);
+        System.out.println("共用时" + (end - start) / 1000.0 + "秒");
+    }
+
+    private static boolean check(int num) {
+        String numStr = String.valueOf(num);
+        for (int i = 0; i < numStr.length() - 1; i++) {
+            if (numStr.charAt(i) > numStr.charAt(i + 1)) { // 判断数字的递增性
+                return false;
+            }
+        }
+        return true;
+    }
+}
+

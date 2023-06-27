@@ -1,0 +1,248 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "test_b",
+      "request": "launch",
+      "mainClass": "test_b",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Test_11_9_1",
+      "request": "launch",
+      "mainClass": "Test_11_9_1",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "YangHuiTriangle",
+      "request": "launch",
+      "mainClass": "YangHuiTriangle",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Shi",
+      "request": "launch",
+      "mainClass": "Shi",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch PrimeNum",
+      "request": "launch",
+      "mainClass": "PrimeNum",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_2_17",
+      "request": "launch",
+      "mainClass": "Test_2_17",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Testcat",
+      "request": "launch",
+      "mainClass": "Testcat",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Practice",
+      "request": "launch",
+      "mainClass": "Practice",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch TicTacToe",
+      "request": "launch",
+      "mainClass": "TicTacToe",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_1_10",
+      "request": "launch",
+      "mainClass": "Test_1_10",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_1_9",
+      "request": "launch",
+      "mainClass": "Test_1_9",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch ChristmasTree",
+      "request": "launch",
+      "mainClass": "ChristmasTree",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch WindowWithButton",
+      "request": "launch",
+      "mainClass": "WindowWithButton",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_22",
+      "request": "launch",
+      "mainClass": "Test_11_22",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Student",
+      "request": "launch",
+      "mainClass": "Student",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test10_2",
+      "request": "launch",
+      "mainClass": "Test10_2",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_20",
+      "request": "launch",
+      "mainClass": "Test_11_20",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch TestIsprim",
+      "request": "launch",
+      "mainClass": "TestIsprim",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch prime",
+      "request": "launch",
+      "mainClass": "prime",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_Thread",
+      "request": "launch",
+      "mainClass": "Test_Thread",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_19",
+      "request": "launch",
+      "mainClass": "Test_11_19",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_18",
+      "request": "launch",
+      "mainClass": "Test_11_18",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Demo02",
+      "request": "launch",
+      "mainClass": "Demo02",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_17",
+      "request": "launch",
+      "mainClass": "Test_11_17",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_16",
+      "request": "launch",
+      "mainClass": "Test_11_16",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_15",
+      "request": "launch",
+      "mainClass": "Test_11_15",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_14",
+      "request": "launch",
+      "mainClass": "Test_11_14",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test",
+      "request": "launch",
+      "mainClass": "Test",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Counter",
+      "request": "launch",
+      "mainClass": "Counter",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test_11_11",
+      "request": "launch",
+      "mainClass": "Test_11_11",
+      "projectName": "java_learn_7778e87b"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Administrator/Desktop/java_learn",
+      "program": "c:/Users/Administrator/Desktop/java_learn/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
